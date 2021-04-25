@@ -1,633 +1,633 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>资深研发工程师 - 徐焌</title><style>
-/* webkit printing magic: print all background colors */
-html {
-	-webkit-print-color-adjust: exact;
-}
-* {
-	box-sizing: border-box;
-	-webkit-print-color-adjust: exact;
-}
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>软件研发专家 - 徐焌</title><style>
+	/* webkit printing magic: print all background colors */
+	html {
+		-webkit-print-color-adjust: exact;
+	}
+	* {
+		box-sizing: border-box;
+		-webkit-print-color-adjust: exact;
+	}
 
-html,
-body {
-	margin: 0;
-	padding: 0;
-}
-@media only screen {
+	html,
 	body {
-		margin: 2em auto;
-		max-width: 900px;
-		color: rgb(55, 53, 47);
+		margin: 0;
+		padding: 0;
 	}
-}
+	@media only screen {
+		body {
+			margin: 2em auto;
+			max-width: 900px;
+			color: rgb(55, 53, 47);
+		}
+	}
 
-body {
-	line-height: 1.5;
-	white-space: pre-wrap;
-}
+	body {
+		line-height: 1.5;
+		white-space: pre-wrap;
+	}
 
-a,
-a.visited {
-	color: inherit;
-	text-decoration: underline;
-}
+	a,
+	a.visited {
+		color: inherit;
+		text-decoration: underline;
+	}
 
-.pdf-relative-link-path {
-	font-size: 80%;
-	color: #444;
-}
+	.pdf-relative-link-path {
+		font-size: 80%;
+		color: #444;
+	}
 
-h1,
-h2,
-h3 {
-	letter-spacing: -0.01em;
-	line-height: 1.2;
-	font-weight: 600;
-	margin-bottom: 0;
-}
+	h1,
+	h2,
+	h3 {
+		letter-spacing: -0.01em;
+		line-height: 1.2;
+		font-weight: 600;
+		margin-bottom: 0;
+	}
 
-.page-title {
-	font-size: 2.5rem;
-	font-weight: 700;
-	margin-top: 0;
-	margin-bottom: 0.75em;
-}
+	.page-title {
+		font-size: 2.5rem;
+		font-weight: 700;
+		margin-top: 0;
+		margin-bottom: 0.75em;
+	}
 
-h1 {
-	font-size: 1.875rem;
-	margin-top: 1.875rem;
-}
+	h1 {
+		font-size: 1.875rem;
+		margin-top: 1.875rem;
+	}
 
-h2 {
-	font-size: 1.5rem;
-	margin-top: 1.5rem;
-}
+	h2 {
+		font-size: 1.5rem;
+		margin-top: 1.5rem;
+	}
 
-h3 {
-	font-size: 1.25rem;
-	margin-top: 1.25rem;
-}
+	h3 {
+		font-size: 1.25rem;
+		margin-top: 1.25rem;
+	}
 
-.source {
-	border: 1px solid #ddd;
-	border-radius: 3px;
-	padding: 1.5em;
-	word-break: break-all;
-}
+	.source {
+		border: 1px solid #ddd;
+		border-radius: 3px;
+		padding: 1.5em;
+		word-break: break-all;
+	}
 
-.callout {
-	border-radius: 3px;
-	padding: 1rem;
-}
+	.callout {
+		border-radius: 3px;
+		padding: 1rem;
+	}
 
-figure {
-	margin: 1.25em 0;
-	page-break-inside: avoid;
-}
+	figure {
+		margin: 1.25em 0;
+		page-break-inside: avoid;
+	}
 
-figcaption {
-	opacity: 0.5;
-	font-size: 85%;
-	margin-top: 0.5em;
-}
+	figcaption {
+		opacity: 0.5;
+		font-size: 85%;
+		margin-top: 0.5em;
+	}
 
-mark {
-	background-color: transparent;
-}
+	mark {
+		background-color: transparent;
+	}
 
-.indented {
-	padding-left: 1.5em;
-}
+	.indented {
+		padding-left: 1.5em;
+	}
 
-hr {
-	background: transparent;
-	display: block;
-	width: 100%;
-	height: 1px;
-	visibility: visible;
-	border: none;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
-}
+	hr {
+		background: transparent;
+		display: block;
+		width: 100%;
+		height: 1px;
+		visibility: visible;
+		border: none;
+		border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+	}
 
-img {
-	max-width: 100%;
-}
-
-@media only print {
 	img {
-		max-height: 100vh;
-		object-fit: contain;
+		max-width: 100%;
 	}
-}
-
-@page {
-	margin: 1in;
-}
-
-.collection-content {
-	font-size: 0.875rem;
-}
-
-.column-list {
-	display: flex;
-	justify-content: space-between;
-}
-
-.column {
-	padding: 0 1em;
-}
-
-.column:first-child {
-	padding-left: 0;
-}
-
-.column:last-child {
-	padding-right: 0;
-}
-
-.table_of_contents-item {
-	display: block;
-	font-size: 0.875rem;
-	line-height: 1.3;
-	padding: 0.125rem;
-}
-
-.table_of_contents-indent-1 {
-	margin-left: 1.5rem;
-}
-
-.table_of_contents-indent-2 {
-	margin-left: 3rem;
-}
-
-.table_of_contents-indent-3 {
-	margin-left: 4.5rem;
-}
-
-.table_of_contents-link {
-	text-decoration: none;
-	opacity: 0.7;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
-}
-
-table,
-th,
-td {
-	border: 1px solid rgba(55, 53, 47, 0.09);
-	border-collapse: collapse;
-}
-
-table {
-	border-left: none;
-	border-right: none;
-}
-
-th,
-td {
-	font-weight: normal;
-	padding: 0.25em 0.5em;
-	line-height: 1.5;
-	min-height: 1.5em;
-	text-align: left;
-}
-
-th {
-	color: rgba(55, 53, 47, 0.6);
-}
-
-ol,
-ul {
-	margin: 0;
-	margin-block-start: 0.6em;
-	margin-block-end: 0.6em;
-}
-
-li > ol:first-child,
-li > ul:first-child {
-	margin-block-start: 0.6em;
-}
-
-ul > li {
-	list-style: disc;
-}
-
-ul.to-do-list {
-	text-indent: -1.7em;
-}
-
-ul.to-do-list > li {
-	list-style: none;
-}
-
-.to-do-children-checked {
-	text-decoration: line-through;
-	opacity: 0.375;
-}
-
-ul.toggle > li {
-	list-style: none;
-}
-
-ul {
-	padding-inline-start: 1.7em;
-}
-
-ul > li {
-	padding-left: 0.1em;
-}
-
-ol {
-	padding-inline-start: 1.6em;
-}
-
-ol > li {
-	padding-left: 0.2em;
-}
-
-.mono ol {
-	padding-inline-start: 2em;
-}
-
-.mono ol > li {
-	text-indent: -0.4em;
-}
-
-.toggle {
-	padding-inline-start: 0em;
-	list-style-type: none;
-}
-
-/* Indent toggle children */
-.toggle > li > details {
-	padding-left: 1.7em;
-}
-
-.toggle > li > details > summary {
-	margin-left: -1.1em;
-}
-
-.selected-value {
-	display: inline-block;
-	padding: 0 0.5em;
-	background: rgba(206, 205, 202, 0.5);
-	border-radius: 3px;
-	margin-right: 0.5em;
-	margin-top: 0.3em;
-	margin-bottom: 0.3em;
-	white-space: nowrap;
-}
-
-.collection-title {
-	display: inline-block;
-	margin-right: 1em;
-}
-
-time {
-	opacity: 0.5;
-}
-
-.icon {
-	display: inline-block;
-	max-width: 1.2em;
-	max-height: 1.2em;
-	text-decoration: none;
-	vertical-align: text-bottom;
-	margin-right: 0.5em;
-}
-
-img.icon {
-	border-radius: 3px;
-}
-
-.user-icon {
-	width: 1.5em;
-	height: 1.5em;
-	border-radius: 100%;
-	margin-right: 0.5rem;
-}
-
-.user-icon-inner {
-	font-size: 0.8em;
-}
-
-.text-icon {
-	border: 1px solid #000;
-	text-align: center;
-}
-
-.page-cover-image {
-	display: block;
-	object-fit: cover;
-	width: 100%;
-	height: 30vh;
-}
-
-.page-header-icon {
-	font-size: 3rem;
-	margin-bottom: 1rem;
-}
-
-.page-header-icon-with-cover {
-	margin-top: -0.72em;
-	margin-left: 0.07em;
-}
-
-.page-header-icon img {
-	border-radius: 3px;
-}
-
-.link-to-page {
-	margin: 1em 0;
-	padding: 0;
-	border: none;
-	font-weight: 500;
-}
-
-p > .user {
-	opacity: 0.5;
-}
-
-td > .user,
-td > time {
-	white-space: nowrap;
-}
-
-input[type="checkbox"] {
-	transform: scale(1.5);
-	margin-right: 0.6em;
-	vertical-align: middle;
-}
-
-p {
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-}
-
-.image {
-	border: none;
-	margin: 1.5em 0;
-	padding: 0;
-	border-radius: 0;
-	text-align: center;
-}
-
-.code,
-code {
-	background: rgba(135, 131, 120, 0.15);
-	border-radius: 3px;
-	padding: 0.2em 0.4em;
-	border-radius: 3px;
-	font-size: 85%;
-	tab-size: 2;
-}
-
-code {
-	color: #eb5757;
-}
-
-.code {
-	padding: 1.5em 1em;
-}
-
-.code-wrap {
-	white-space: pre-wrap;
-	word-break: break-all;
-}
-
-.code > code {
-	background: none;
-	padding: 0;
-	font-size: 100%;
-	color: inherit;
-}
-
-blockquote {
-	font-size: 1.25em;
-	margin: 1em 0;
-	padding-left: 1em;
-	border-left: 3px solid rgb(55, 53, 47);
-}
-
-.bookmark {
-	text-decoration: none;
-	max-height: 8em;
-	padding: 0;
-	display: flex;
-	width: 100%;
-	align-items: stretch;
-}
-
-.bookmark-title {
-	font-size: 0.85em;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	height: 1.75em;
-	white-space: nowrap;
-}
-
-.bookmark-text {
-	display: flex;
-	flex-direction: column;
-}
-
-.bookmark-info {
-	flex: 4 1 180px;
-	padding: 12px 14px 14px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.bookmark-image {
-	width: 33%;
-	flex: 1 1 180px;
-	display: block;
-	position: relative;
-	object-fit: cover;
-	border-radius: 1px;
-}
-
-.bookmark-description {
-	color: rgba(55, 53, 47, 0.6);
-	font-size: 0.75em;
-	overflow: hidden;
-	max-height: 4.5em;
-	word-break: break-word;
-}
-
-.bookmark-href {
-	font-size: 0.75em;
-	margin-top: 0.25em;
-}
-
-.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
-.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
-.serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
-.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
-.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
-
-.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
-
-.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
-
-.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
-
-.highlight-default {
-}
-.highlight-gray {
-	color: rgb(155,154,151);
-}
-.highlight-brown {
-	color: rgb(100,71,58);
-}
-.highlight-orange {
-	color: rgb(217,115,13);
-}
-.highlight-yellow {
-	color: rgb(223,171,1);
-}
-.highlight-teal {
-	color: rgb(15,123,108);
-}
-.highlight-blue {
-	color: rgb(11,110,153);
-}
-.highlight-purple {
-	color: rgb(105,64,165);
-}
-.highlight-pink {
-	color: rgb(173,26,114);
-}
-.highlight-red {
-	color: rgb(224,62,62);
-}
-.highlight-gray_background {
-	background: rgb(235,236,237);
-}
-.highlight-brown_background {
-	background: rgb(233,229,227);
-}
-.highlight-orange_background {
-	background: rgb(250,235,221);
-}
-.highlight-yellow_background {
-	background: rgb(251,243,219);
-}
-.highlight-teal_background {
-	background: rgb(221,237,234);
-}
-.highlight-blue_background {
-	background: rgb(221,235,241);
-}
-.highlight-purple_background {
-	background: rgb(234,228,242);
-}
-.highlight-pink_background {
-	background: rgb(244,223,235);
-}
-.highlight-red_background {
-	background: rgb(251,228,228);
-}
-.block-color-default {
-	color: inherit;
-	fill: inherit;
-}
-.block-color-gray {
-	color: rgba(55, 53, 47, 0.6);
-	fill: rgba(55, 53, 47, 0.6);
-}
-.block-color-brown {
-	color: rgb(100,71,58);
-	fill: rgb(100,71,58);
-}
-.block-color-orange {
-	color: rgb(217,115,13);
-	fill: rgb(217,115,13);
-}
-.block-color-yellow {
-	color: rgb(223,171,1);
-	fill: rgb(223,171,1);
-}
-.block-color-teal {
-	color: rgb(15,123,108);
-	fill: rgb(15,123,108);
-}
-.block-color-blue {
-	color: rgb(11,110,153);
-	fill: rgb(11,110,153);
-}
-.block-color-purple {
-	color: rgb(105,64,165);
-	fill: rgb(105,64,165);
-}
-.block-color-pink {
-	color: rgb(173,26,114);
-	fill: rgb(173,26,114);
-}
-.block-color-red {
-	color: rgb(224,62,62);
-	fill: rgb(224,62,62);
-}
-.block-color-gray_background {
-	background: rgb(235,236,237);
-}
-.block-color-brown_background {
-	background: rgb(233,229,227);
-}
-.block-color-orange_background {
-	background: rgb(250,235,221);
-}
-.block-color-yellow_background {
-	background: rgb(251,243,219);
-}
-.block-color-teal_background {
-	background: rgb(221,237,234);
-}
-.block-color-blue_background {
-	background: rgb(221,235,241);
-}
-.block-color-purple_background {
-	background: rgb(234,228,242);
-}
-.block-color-pink_background {
-	background: rgb(244,223,235);
-}
-.block-color-red_background {
-	background: rgb(251,228,228);
-}
-.select-value-color-default { background-color: rgba(206,205,202,0.5); }
-.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
-.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
-.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
-.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
-.select-value-color-green { background-color: rgba(0,135,107,0.2); }
-.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
-.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
-.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
-.select-value-color-red { background-color: rgba(255,0,26,0.2); }
-
-.checkbox {
-	display: inline-flex;
-	vertical-align: text-bottom;
-	width: 16;
-	height: 16;
-	background-size: 16px;
-	margin-left: 2px;
-	margin-right: 5px;
-}
-
-.checkbox-on {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-
-.checkbox-off {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-	
-</style></head><body><article id="b8878f4d-a3a5-4ac7-aa21-0a527517bb3c" class="page sans"><header><h1 class="page-title">资深研发工程师 - 徐焌</h1></header><div class="page-body"><blockquote id="573cfdf2-7738-403a-b01a-4e6b5b709dc7" class="block-color-blue"><a href="tel:13270417323">Phone：13270417323</a>
-<a href="mailto:me@yamajik.com">Email：me@yamajik.com</a>
-<a href="https://github.com/yamajik">Github：https://github.com/yamajik</a>
-<a href="https://www.linkedin.com/in/yamajik">Linkedin：https://www.linkedin.com/in/yamajik</a>
-<a href="https://www.notion.so/yamajik/b8878f4da3a54ac7aa210a527517bb3c">Online Resume：https://www.notion.so/yamajik</a></blockquote><div id="e92d55f7-cf10-48e7-9286-4bf3623d1a94" class="column-list"><div id="aded66ce-59ca-4bb6-a0c2-4e353742fa7e" style="width:50%" class="column"><h1 id="90eaf178-d197-41c2-8d51-e5d251f025a5" class="">🙋‍♂️  个人简介</h1><ul id="e3cd6a35-064d-43eb-9e2e-2f1f1f7ccb3d" class="bulleted-list"><li>擅长设计实现软件基础架构</li></ul><ul id="a8f8ea36-61a4-45a5-ab82-4f252875b25a" class="bulleted-list"><li>熟悉分布式应用开发及原理</li></ul><ul id="076c9c4d-2b5a-4f75-a231-a622d4616ea4" class="bulleted-list"><li>扎实的编程基础和英语能力</li></ul><ul id="07195eb3-6565-46d8-8ed8-634fc9ccc537" class="bulleted-list"><li>良好的团队沟通与协作能力</li></ul></div><div id="639df097-d8c8-4d14-8870-ff3b1075460e" style="width:50%" class="column"><h1 id="84ef3549-38e4-4914-a4a8-e7016eb96c46" class="">📚  教育经历</h1><h2 id="c6a06355-ef2d-45f2-904f-cd5121fcaef7" class="">江苏科技大学</h2><p id="4ab35bb0-8dc9-43b1-8ca8-56044e1f5b86" class="block-color-gray">2012 - <em><mark class="highlight-gray">2016</mark></em></p><p id="eb4ae973-2bdb-4e95-8b84-b67e8619745c" class="">计算机软件工程系</p></div></div><hr id="8a2dfb67-d002-48e2-a9bf-d237f06d8c7b"/><h1 id="ae309cbc-38e0-4048-a189-834b7bf29d2c" class="">👨‍💻<strong>  工作经历</strong></h1><h2 id="4e3bb88b-3448-462a-9bb6-f9bb599e136a" class="">资深研发工程师</h2><p id="f64c7511-96f6-4b19-9f79-71c272864f36" class=""><mark class="highlight-gray">雪浪数制科技有限公司</mark><mark class="highlight-gray"><em>（2018.08 - 至今）</em></mark></p><ul id="c00771e2-d806-46d1-8683-f21a04cb302f" class="bulleted-list"><li>雪浪算盘<p id="4ea8d9a8-056f-4639-9988-fd9e450e57f2" class="block-color-gray">技术栈：Golang、Python、Typescript、Redis、Posgres、Minio</p><p id="4f5db84f-2754-4ec6-b7bb-0890257b451c" class="">雪浪算盘（雪浪 OS 三件套之一）是一款基于开源生态的工业智能建模协同平台，用于开发工业智能应用，内嵌了丰富的机器学习算法、深度学习算法、可视化套件和数据处理套件，可以快速完成数据模型建立、调优、部署应用，提高效率降低成本，为企业插上人工智能的翅膀。<mark class="highlight-blue">本人主要负责该产品技术基础架构的设计与实现，结合云原生技术与 AI 技术，确保工业解决方案能够在工业场景中落地。</mark></p><ol id="d17478ae-ecad-41be-813d-0beceb841944" class="numbered-list" start="1"><li><mark class="highlight-pink">技术架构</mark>：负责算盘产品技术架构的整体设计与实现，确保通过算盘构建的工业 APP 能够持久稳定的运行在多种不同环境中（公有云、私有云、边缘计算）。算盘产品技术架构粗略可分为以下四层（从上至下分别应对不同的角色与不同的场景）：<ul id="0299244d-68db-4589-924f-e2358eca59f7" class="bulleted-list"><li>用户视图层：通过算盘构建的工业 APP 将提供一个前端作为用户入口给最终用户使用（例如：产线工人）。</li></ul><ul id="704a515a-31ca-4f9b-b6af-e5599580d16c" class="bulleted-list"><li>应用建模层：主要面向 OT 工程师的使用习惯进行设计，采用 Flow Base Programing 的方式能够拖拉拽快速构建出一个简单工业 APP，并提供编程语言入口能够补充一些有向无环图无法描述的逻辑（参考：Labview、Simulink）。</li></ul><ul id="a737c636-ce15-43b3-8dab-20328cd0c4d9" class="bulleted-list"><li>函数计算层：主要面向算法工程师与机理开发人员，提供 Lambda 表达式与函数计算两种方式，能够方便快速地开发工业算法与机理。区别于市面上其他 FAAS 产品，工业场景对计算资源的使用相对苛刻，该层使用微服务的方式重新实现 FAAS 服务，解决常规 FAAS 产品计算资源滥用的问题，在 FAAS 的便捷与性能之间取得平衡。</li></ul><ul id="d79b4f5d-09bb-47e4-a6e9-d527faf44ab2" class="bulleted-list"><li>分布式运行时：该层主要解决上三层的应用在公有云、私有云（Kubernetes 集群）、边缘计算（K3s 单节点）、个人电脑 Linux（Docker）、个人电脑 Win|Mac （PM2）等不同场景的部署运行问题（相似：Dapr）。</li></ul><p id="ec720b78-b9b7-4011-b760-4dd54a5f95ad" class="">例如下方视频中由算盘驱动的柑橘分拣产线。</p><figure id="da8f3a7c-d396-41b6-8cc5-b2899c4b4259"><div class="source"><a href="https://suanpan-public.oss-cn-shanghai.aliyuncs.com/橘子分选.mp4">https://suanpan-public.oss-cn-shanghai.aliyuncs.com/橘子分选.mp4</a></div></figure></li></ol><ol id="52d45d9e-9418-4046-b9f1-389801c8542a" class="numbered-list" start="2"><li><mark class="highlight-red">开发规范</mark>：负责算盘组件 SDK 规范设计，确保开发者仅需关心业务层的逻辑开发，无需操心组件间数据交换时与数据层的对象存储、消息队列、流计算等的实际交互逻辑（类似于 Dapr 的 Binding）。目前算盘提供多种 SDK： Python（用于实现算法组件）、Node（用于实现逻辑组件）、Javascript（用于实现可视化组件）、Java（用于面向广大开发者），其中 Python SDK 由本人独立实现，并作为其他语言 SDK 参考的规范，在算盘现有 1000+ 组件中，80% 的组件基于 Python SDK 实现，并已经在诸多项目中久经考验。</li></ol><ol id="5120081c-4609-424e-86d2-0a57018335be" class="numbered-list" start="3"><li><mark class="highlight-red">核心组件</mark>：负责算盘产品基础功能组件的设计与实现，适度把控组件功能颗粒度，优化组件的使用体验与性能，算盘使用频率最高的组件榜单中常年被这些组件霸榜。其中 VSCode 组件与公式编辑器组件分别定为两种不同的场景，方便开发者能够快速地进行算盘自定义组件的开发。<ul id="85ecb5e2-2b1e-4262-95c9-b2dc0521ae17" class="bulleted-list"><li>VSCode 组件：该组件基于 Code Server 进行开发，作为算盘组件的在线开发工具（IDE），内置各种语言的 SDK 与插件，能够快速方便地开发算盘组件。该组件在算盘组件的标准开发流程中占据着重要的地位。</li></ul><ul id="75088260-1cf7-4fff-98b0-ba70774c37d1" class="bulleted-list"><li>公式编辑器组件： 相较于 VSCode 组件，公式编辑器组件采用更为精简的 Lambda 表达式来编写机理公式，机理开发人员能够非常方便将工业机理沉淀为算盘组件。</li></ul></li></ol><ol id="0cc028c7-cf61-4117-82a0-dad77492a1aa" class="numbered-list" start="4"><li><mark class="highlight-red">智能算法</mark>：负责算盘工业智能算法 Infrastructure 流程设计与实现，包含机器学习、深度学习的训练至部署的全流程、运筹学寻优算法等。基于 SDK 与核心组件构建出一套满足算法分布式以及 GPU 调度的多种场景需求的算法开发、交付的标准流程，使用算盘交付的工业智能算法均以此作为标准流程来简化算法开发与交付的复杂度。</li></ol><ol id="0aa1ea15-4e17-40b1-a6cd-638cf0f4b73a" class="numbered-list" start="5"><li><mark class="highlight-red">架构延伸</mark>：负责算盘边缘版与算盘桌面版的设计与实现<ul id="7a310b09-e035-42e6-9362-af5303bb64d1" class="bulleted-list"><li>算盘边缘版：基于 k3s 独立部署，能够完美地解决边缘场景网络孱弱，计算异构等问题，适合在边缘工控盒子中运行，目前与硬件相关的项目均采用该方案进行部署。</li></ul><ul id="c34455fa-28f8-4eed-a161-0cee76fb10a7" class="bulleted-list"><li>算盘个人版：基于 electron 进行开发，该方案利用个人电脑的计算资源运行，在校园推广的场景中非常合适，目前各合作高校均采用此版本作为教育版使用。</li></ul></li></ol><ol id="b715928b-f368-4619-8bab-66fb95e2aae8" class="numbered-list" start="6"><li><mark class="highlight-red">产品周边</mark>：参与算盘的产品设计、运营推广、培训教育等工作，目前算盘已与多所高校合作（浙江大学、华东理工、江南大学等），将算盘作为教育工具逐步推进其在工业领域落地。</li></ol><p id="f5336daf-9efc-4837-b3cb-4781fcc1ffe0" class="">
-</p></li></ul><h2 id="8b341386-8ffa-4f68-843e-6c2dd593e5e6" class="">软件研发工程师</h2><p id="01c72586-8b64-438c-8d65-8526027f4bba" class="block-color-gray">浙江九州云信息科技<mark class="highlight-gray">有限公司</mark><mark class="highlight-gray"><em>（2016.07 - 2018.08）</em></mark></p><ul id="03224691-3d00-4453-bc2a-2c9d9526590d" class="bulleted-list"><li>Animbus<p id="b1f516a8-fbb2-472a-9b86-7d8410f2a169" class="block-color-gray">技术栈：Python、Angular、Mysql、OpenStack</p><p id="3560f2cc-81fc-476d-905d-73f11333c504" class="">Animus 是 99cloud 云平台管理系统，为企业级云计算管理平台提供了一站式的平台解决方案。<mark class="highlight-blue">本人主要负责维护该产品的持续迭代，前后端优化等工作。</mark></p><ol id="0b53752f-9618-4aa2-a02b-e8699286c065" class="numbered-list" start="1"><li>为解决 Django Template 多层级模板嵌套性能太差的问题，决定使用 AngularJS 重构前端优化体验，我负责平台逐步迁移方案，封装前端视图组件以及前后端中间件，以便团队在新的框架下能够快速开发业务。</li></ol><ol id="351ebaea-e3a2-4e21-a2d0-6b2ac5e79679" class="numbered-list" start="2"><li>负责平台 Api 性能优化，从 UI 至底层服务逐一排查问题，在尽可能不破坏原先架构的基础上寻求解决方案，确保所有 Api 都能在 1s 之内完成。</li></ol><ol id="2386873d-b2a3-473e-a363-d3bdbe5befe0" class="numbered-list" start="3"><li>参与 kolla-ansible (Ansible, Docker) 平台部署项目的开发，熟悉线上 Docker 环境调试。</li></ol><ol id="0ae6bf45-086b-4b6f-92c0-ff39fd0a00cf" class="numbered-list" start="4"><li>参与告警系统 (虚拟机业务告警、平台服务告警) 的设计与开发，负责业务告警系统的研发。</li></ol><ol id="c2f7d5e5-5212-4c93-8897-b0fd8c681f9d" class="numbered-list" start="5"><li>能够带领小团队在敏捷开发中顺利地完成每个 Scrum 的任务。</li></ol></li></ul><ul id="85da9507-ea05-408f-a7be-0aeb3404b4b9" class="bulleted-list"><li>Neutron<p id="84ab3123-b5da-431b-aae4-2f7ee16f883f" class="block-color-gray">技术栈：Python、Mysql、OpenStack</p><p id="c1295a80-6232-48cb-8618-c29614efe210" class="">Neutron 是 99cloud 云平台的网络解决方案，针对企业不同的网络环境定制满足客户需求的云平台网络方案。<mark class="highlight-blue">本人负责该产品部分功能研发与优化。</mark></p><ol id="2e281bf6-8926-40f2-8c14-a9d3788c1c2a" class="numbered-list" start="1"><li>负责开发并维护负载均衡器、端口转发等客制化功能。</li></ol><ol id="70406622-ee84-4295-a6bf-c468e1d98a80" class="numbered-list" start="2"><li>负责 Api 性能调优，部分 Api 性能提升 6x。</li></ol></li></ul><hr id="1bee84d2-01d4-4934-8fe1-c14fc2b13a2e"/><h1 id="1b352be5-e96f-4a23-b23c-eee94e73a7a3" class="">🛠  技术栈</h1><h3 id="b64a2e83-0f33-41b7-9827-b197ca273456" class="">Golang ⭐️⭐️⭐️⭐️</h3><p id="b421a383-3af2-4e60-8136-ee5ea318dfcf" class="">在工业物联网这几年，跨平台的需求异常旺盛，特别是 Win 裸跑的需求，Golang 能够很好地解决这一问题，目前是我的主力开发语言。</p><h3 id="cc68b87b-97fa-4357-a9a2-9b588ff1f626" class="">Python ⭐️⭐️⭐️⭐️</h3><p id="4cdddca1-8495-4043-9543-011fb41b21c7" class="">Python 在科学计算、数据处理等领域有着无法超越的生态优势，与我的工作密切相关，是我长期使用的第二语言。</p><h3 id="100712c8-08ef-43ba-8f31-35c05387972e" class="">Typescript ⭐️⭐️⭐️</h3><p id="640f4cdb-345f-4a7f-8077-03ce1f8c0ddb" class="">Nodejs 的 I/O 处理能力与 Typescript 的类型系统都非常好用，在业务层使用很不错。</p><hr id="6042615b-e84e-4b75-9d83-4e2f0386a75f"/><h1 id="c6f23cc5-63c9-48b6-836b-aa761328c6d1" class="">📜  开源贡献</h1><figure id="93e7d28a-05ea-4a2c-a72e-6286b7525c01" class="image"><a href="https://camo.githubusercontent.com/76d8b29ebe2ab291bb902185c68f00f4a323be850f40c9d7bdd16f55263baf3c/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d79616d616a696b26636f756e745f707269766174653d74727565"><img style="width:336px" src="https://camo.githubusercontent.com/76d8b29ebe2ab291bb902185c68f00f4a323be850f40c9d7bdd16f55263baf3c/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d79616d616a696b26636f756e745f707269766174653d74727565"/></a></figure><p id="94607749-8b82-4aa6-90e6-7a6a06725caf" class="">
-</p></div></article></body></html>
+
+	@media only print {
+		img {
+			max-height: 100vh;
+			object-fit: contain;
+		}
+	}
+
+	@page {
+		margin: 1in;
+	}
+
+	.collection-content {
+		font-size: 0.875rem;
+	}
+
+	.column-list {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.column {
+		padding: 0 1em;
+	}
+
+	.column:first-child {
+		padding-left: 0;
+	}
+
+	.column:last-child {
+		padding-right: 0;
+	}
+
+	.table_of_contents-item {
+		display: block;
+		font-size: 0.875rem;
+		line-height: 1.3;
+		padding: 0.125rem;
+	}
+
+	.table_of_contents-indent-1 {
+		margin-left: 1.5rem;
+	}
+
+	.table_of_contents-indent-2 {
+		margin-left: 3rem;
+	}
+
+	.table_of_contents-indent-3 {
+		margin-left: 4.5rem;
+	}
+
+	.table_of_contents-link {
+		text-decoration: none;
+		opacity: 0.7;
+		border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+	}
+
+	table,
+	th,
+	td {
+		border: 1px solid rgba(55, 53, 47, 0.09);
+		border-collapse: collapse;
+	}
+
+	table {
+		border-left: none;
+		border-right: none;
+	}
+
+	th,
+	td {
+		font-weight: normal;
+		padding: 0.25em 0.5em;
+		line-height: 1.5;
+		min-height: 1.5em;
+		text-align: left;
+	}
+
+	th {
+		color: rgba(55, 53, 47, 0.6);
+	}
+
+	ol,
+	ul {
+		margin: 0;
+		margin-block-start: 0.6em;
+		margin-block-end: 0.6em;
+	}
+
+	li > ol:first-child,
+	li > ul:first-child {
+		margin-block-start: 0.6em;
+	}
+
+	ul > li {
+		list-style: disc;
+	}
+
+	ul.to-do-list {
+		text-indent: -1.7em;
+	}
+
+	ul.to-do-list > li {
+		list-style: none;
+	}
+
+	.to-do-children-checked {
+		text-decoration: line-through;
+		opacity: 0.375;
+	}
+
+	ul.toggle > li {
+		list-style: none;
+	}
+
+	ul {
+		padding-inline-start: 1.7em;
+	}
+
+	ul > li {
+		padding-left: 0.1em;
+	}
+
+	ol {
+		padding-inline-start: 1.6em;
+	}
+
+	ol > li {
+		padding-left: 0.2em;
+	}
+
+	.mono ol {
+		padding-inline-start: 2em;
+	}
+
+	.mono ol > li {
+		text-indent: -0.4em;
+	}
+
+	.toggle {
+		padding-inline-start: 0em;
+		list-style-type: none;
+	}
+
+	/* Indent toggle children */
+	.toggle > li > details {
+		padding-left: 1.7em;
+	}
+
+	.toggle > li > details > summary {
+		margin-left: -1.1em;
+	}
+
+	.selected-value {
+		display: inline-block;
+		padding: 0 0.5em;
+		background: rgba(206, 205, 202, 0.5);
+		border-radius: 3px;
+		margin-right: 0.5em;
+		margin-top: 0.3em;
+		margin-bottom: 0.3em;
+		white-space: nowrap;
+	}
+
+	.collection-title {
+		display: inline-block;
+		margin-right: 1em;
+	}
+
+	time {
+		opacity: 0.5;
+	}
+
+	.icon {
+		display: inline-block;
+		max-width: 1.2em;
+		max-height: 1.2em;
+		text-decoration: none;
+		vertical-align: text-bottom;
+		margin-right: 0.5em;
+	}
+
+	img.icon {
+		border-radius: 3px;
+	}
+
+	.user-icon {
+		width: 1.5em;
+		height: 1.5em;
+		border-radius: 100%;
+		margin-right: 0.5rem;
+	}
+
+	.user-icon-inner {
+		font-size: 0.8em;
+	}
+
+	.text-icon {
+		border: 1px solid #000;
+		text-align: center;
+	}
+
+	.page-cover-image {
+		display: block;
+		object-fit: cover;
+		width: 100%;
+		height: 30vh;
+	}
+
+	.page-header-icon {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+
+	.page-header-icon-with-cover {
+		margin-top: -0.72em;
+		margin-left: 0.07em;
+	}
+
+	.page-header-icon img {
+		border-radius: 3px;
+	}
+
+	.link-to-page {
+		margin: 1em 0;
+		padding: 0;
+		border: none;
+		font-weight: 500;
+	}
+
+	p > .user {
+		opacity: 0.5;
+	}
+
+	td > .user,
+	td > time {
+		white-space: nowrap;
+	}
+
+	input[type="checkbox"] {
+		transform: scale(1.5);
+		margin-right: 0.6em;
+		vertical-align: middle;
+	}
+
+	p {
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+	}
+
+	.image {
+		border: none;
+		margin: 1.5em 0;
+		padding: 0;
+		border-radius: 0;
+		text-align: center;
+	}
+
+	.code,
+	code {
+		background: rgba(135, 131, 120, 0.15);
+		border-radius: 3px;
+		padding: 0.2em 0.4em;
+		border-radius: 3px;
+		font-size: 85%;
+		tab-size: 2;
+	}
+
+	code {
+		color: #eb5757;
+	}
+
+	.code {
+		padding: 1.5em 1em;
+	}
+
+	.code-wrap {
+		white-space: pre-wrap;
+		word-break: break-all;
+	}
+
+	.code > code {
+		background: none;
+		padding: 0;
+		font-size: 100%;
+		color: inherit;
+	}
+
+	blockquote {
+		font-size: 1.25em;
+		margin: 1em 0;
+		padding-left: 1em;
+		border-left: 3px solid rgb(55, 53, 47);
+	}
+
+	.bookmark {
+		text-decoration: none;
+		max-height: 8em;
+		padding: 0;
+		display: flex;
+		width: 100%;
+		align-items: stretch;
+	}
+
+	.bookmark-title {
+		font-size: 0.85em;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		height: 1.75em;
+		white-space: nowrap;
+	}
+
+	.bookmark-text {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.bookmark-info {
+		flex: 4 1 180px;
+		padding: 12px 14px 14px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.bookmark-image {
+		width: 33%;
+		flex: 1 1 180px;
+		display: block;
+		position: relative;
+		object-fit: cover;
+		border-radius: 1px;
+	}
+
+	.bookmark-description {
+		color: rgba(55, 53, 47, 0.6);
+		font-size: 0.75em;
+		overflow: hidden;
+		max-height: 4.5em;
+		word-break: break-word;
+	}
+
+	.bookmark-href {
+		font-size: 0.75em;
+		margin-top: 0.25em;
+	}
+
+	.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+	.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+	.serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+	.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+	.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+	.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+	.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+	.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+	.highlight-default {
+	}
+	.highlight-gray {
+		color: rgb(155,154,151);
+	}
+	.highlight-brown {
+		color: rgb(100,71,58);
+	}
+	.highlight-orange {
+		color: rgb(217,115,13);
+	}
+	.highlight-yellow {
+		color: rgb(223,171,1);
+	}
+	.highlight-teal {
+		color: rgb(15,123,108);
+	}
+	.highlight-blue {
+		color: rgb(11,110,153);
+	}
+	.highlight-purple {
+		color: rgb(105,64,165);
+	}
+	.highlight-pink {
+		color: rgb(173,26,114);
+	}
+	.highlight-red {
+		color: rgb(224,62,62);
+	}
+	.highlight-gray_background {
+		background: rgb(235,236,237);
+	}
+	.highlight-brown_background {
+		background: rgb(233,229,227);
+	}
+	.highlight-orange_background {
+		background: rgb(250,235,221);
+	}
+	.highlight-yellow_background {
+		background: rgb(251,243,219);
+	}
+	.highlight-teal_background {
+		background: rgb(221,237,234);
+	}
+	.highlight-blue_background {
+		background: rgb(221,235,241);
+	}
+	.highlight-purple_background {
+		background: rgb(234,228,242);
+	}
+	.highlight-pink_background {
+		background: rgb(244,223,235);
+	}
+	.highlight-red_background {
+		background: rgb(251,228,228);
+	}
+	.block-color-default {
+		color: inherit;
+		fill: inherit;
+	}
+	.block-color-gray {
+		color: rgba(55, 53, 47, 0.6);
+		fill: rgba(55, 53, 47, 0.6);
+	}
+	.block-color-brown {
+		color: rgb(100,71,58);
+		fill: rgb(100,71,58);
+	}
+	.block-color-orange {
+		color: rgb(217,115,13);
+		fill: rgb(217,115,13);
+	}
+	.block-color-yellow {
+		color: rgb(223,171,1);
+		fill: rgb(223,171,1);
+	}
+	.block-color-teal {
+		color: rgb(15,123,108);
+		fill: rgb(15,123,108);
+	}
+	.block-color-blue {
+		color: rgb(11,110,153);
+		fill: rgb(11,110,153);
+	}
+	.block-color-purple {
+		color: rgb(105,64,165);
+		fill: rgb(105,64,165);
+	}
+	.block-color-pink {
+		color: rgb(173,26,114);
+		fill: rgb(173,26,114);
+	}
+	.block-color-red {
+		color: rgb(224,62,62);
+		fill: rgb(224,62,62);
+	}
+	.block-color-gray_background {
+		background: rgb(235,236,237);
+	}
+	.block-color-brown_background {
+		background: rgb(233,229,227);
+	}
+	.block-color-orange_background {
+		background: rgb(250,235,221);
+	}
+	.block-color-yellow_background {
+		background: rgb(251,243,219);
+	}
+	.block-color-teal_background {
+		background: rgb(221,237,234);
+	}
+	.block-color-blue_background {
+		background: rgb(221,235,241);
+	}
+	.block-color-purple_background {
+		background: rgb(234,228,242);
+	}
+	.block-color-pink_background {
+		background: rgb(244,223,235);
+	}
+	.block-color-red_background {
+		background: rgb(251,228,228);
+	}
+	.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+	.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+	.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+	.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+	.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+	.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+	.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+	.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+	.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+	.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+	.checkbox {
+		display: inline-flex;
+		vertical-align: text-bottom;
+		width: 16;
+		height: 16;
+		background-size: 16px;
+		margin-left: 2px;
+		margin-right: 5px;
+	}
+
+	.checkbox-on {
+		background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+	}
+
+	.checkbox-off {
+		background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+	}
+
+	</style></head><body><article id="b8878f4d-a3a5-4ac7-aa21-0a527517bb3c" class="page sans"><header><h1 class="page-title">软件研发专家 - 徐焌</h1></header><div class="page-body"><blockquote id="573cfdf2-7738-403a-b01a-4e6b5b709dc7" class="block-color-blue"><a href="tel:13270417323">Phone：13270417323</a>
+	<a href="mailto:me@yamajik.com">Email：me@yamajik.com</a>
+	<a href="https://github.com/yamajik">Github：https://github.com/yamajik</a>
+	<a href="https://www.linkedin.com/in/yamajik">Linkedin：https://www.linkedin.com/in/yamajik</a>
+	<a href="https://www.notion.so/yamajik/b8878f4da3a54ac7aa210a527517bb3c">Online Resume：https://www.notion.so/yamajik</a></blockquote><div id="e92d55f7-cf10-48e7-9286-4bf3623d1a94" class="column-list"><div id="aded66ce-59ca-4bb6-a0c2-4e353742fa7e" style="width:50%" class="column"><h1 id="90eaf178-d197-41c2-8d51-e5d251f025a5" class="">🙋‍♂️  个人简介</h1><ul id="e3cd6a35-064d-43eb-9e2e-2f1f1f7ccb3d" class="bulleted-list"><li>擅长设计实现软件基础架构</li></ul><ul id="a8f8ea36-61a4-45a5-ab82-4f252875b25a" class="bulleted-list"><li>熟悉分布式应用开发及原理</li></ul><ul id="076c9c4d-2b5a-4f75-a231-a622d4616ea4" class="bulleted-list"><li>扎实的编程基础和英语能力</li></ul><ul id="07195eb3-6565-46d8-8ed8-634fc9ccc537" class="bulleted-list"><li>良好的团队沟通与协作能力</li></ul></div><div id="639df097-d8c8-4d14-8870-ff3b1075460e" style="width:50%" class="column"><h1 id="84ef3549-38e4-4914-a4a8-e7016eb96c46" class="">📚  教育经历</h1><h2 id="c6a06355-ef2d-45f2-904f-cd5121fcaef7" class="">江苏科技大学</h2><p id="4ab35bb0-8dc9-43b1-8ca8-56044e1f5b86" class="block-color-gray">2012 - <em><mark class="highlight-gray">2016</mark></em></p><p id="eb4ae973-2bdb-4e95-8b84-b67e8619745c" class="">计算机软件工程系</p></div></div><hr id="8a2dfb67-d002-48e2-a9bf-d237f06d8c7b"/><h1 id="ae309cbc-38e0-4048-a189-834b7bf29d2c" class="">👨‍💻<strong>  工作经历</strong></h1><h2 id="4e3bb88b-3448-462a-9bb6-f9bb599e136a" class="">软件研发专家</h2><p id="f64c7511-96f6-4b19-9f79-71c272864f36" class=""><mark class="highlight-gray">雪浪数制科技有限公司</mark><mark class="highlight-gray"><em>（2018.08 - 至今）</em></mark></p><ul id="c00771e2-d806-46d1-8683-f21a04cb302f" class="bulleted-list"><li>雪浪算盘<p id="4ea8d9a8-056f-4639-9988-fd9e450e57f2" class="block-color-gray">技术栈：Golang、Python、Typescript、Redis、Posgres、Minio</p><p id="4f5db84f-2754-4ec6-b7bb-0890257b451c" class="">雪浪算盘（雪浪 OS 三件套之一）是一款基于开源生态的工业智能建模协同平台，用于开发工业智能应用，内嵌了丰富的机器学习算法、深度学习算法、可视化套件和数据处理套件，可以快速完成数据模型建立、调优、部署应用，提高效率降低成本，为企业插上人工智能的翅膀。<mark class="highlight-blue">本人主要负责该产品技术基础架构的设计与实现，结合云原生技术与 AI 技术，确保工业解决方案能够在工业场景中落地。</mark></p><ol id="d17478ae-ecad-41be-813d-0beceb841944" class="numbered-list" start="1"><li><mark class="highlight-pink">技术架构</mark>：负责算盘产品技术架构的整体设计与实现，确保通过算盘构建的工业 APP 能够持久稳定的运行在多种不同环境中（公有云、私有云、边缘计算）。算盘产品技术架构粗略可分为以下四层（从上至下分别应对不同的角色与不同的场景）：<ul id="0299244d-68db-4589-924f-e2358eca59f7" class="bulleted-list"><li>用户视图层：通过算盘构建的工业 APP 将提供一个前端作为用户入口给最终用户使用（例如：产线工人）。</li></ul><ul id="704a515a-31ca-4f9b-b6af-e5599580d16c" class="bulleted-list"><li>应用建模层：主要面向 OT 工程师的使用习惯进行设计，采用 Flow Base Programing 的方式能够拖拉拽快速构建出一个简单工业 APP，并提供编程语言入口能够补充一些有向无环图无法描述的逻辑（参考：Labview、Simulink）。</li></ul><ul id="a737c636-ce15-43b3-8dab-20328cd0c4d9" class="bulleted-list"><li>函数计算层：主要面向算法工程师与机理开发人员，提供 Lambda 表达式与函数计算两种方式，能够方便快速地开发工业算法与机理。区别于市面上其他 FAAS 产品，工业场景对计算资源的使用相对苛刻，该层使用微服务的方式重新实现 FAAS 服务，解决常规 FAAS 产品计算资源滥用的问题，在 FAAS 的便捷与性能之间取得平衡。</li></ul><ul id="d79b4f5d-09bb-47e4-a6e9-d527faf44ab2" class="bulleted-list"><li>分布式运行时：该层主要解决上三层的应用在公有云、私有云（Kubernetes 集群）、边缘计算（K3s 单节点）、个人电脑 Linux（Docker）、个人电脑 Win|Mac （PM2）等不同场景的部署运行问题（相似：Dapr）。</li></ul><p id="ec720b78-b9b7-4011-b760-4dd54a5f95ad" class="">例如下方视频中由算盘驱动的柑橘分拣产线。</p><figure id="da8f3a7c-d396-41b6-8cc5-b2899c4b4259"><div class="source"><a href="https://suanpan-public.oss-cn-shanghai.aliyuncs.com/橘子分选.mp4">https://suanpan-public.oss-cn-shanghai.aliyuncs.com/橘子分选.mp4</a></div></figure></li></ol><ol id="52d45d9e-9418-4046-b9f1-389801c8542a" class="numbered-list" start="2"><li><mark class="highlight-red">开发规范</mark>：负责算盘组件 SDK 规范设计，确保开发者仅需关心业务层的逻辑开发，无需操心组件间数据交换时与数据层的对象存储、消息队列、流计算等的实际交互逻辑（类似于 Dapr 的 Binding）。目前算盘提供多种 SDK： Python（用于实现算法组件）、Node（用于实现逻辑组件）、Javascript（用于实现可视化组件）、Java（用于面向广大开发者），其中 Python SDK 由本人独立实现，并作为其他语言 SDK 参考的规范，在算盘现有 1000+ 组件中，80% 的组件基于 Python SDK 实现，并已经在诸多项目中久经考验。</li></ol><ol id="5120081c-4609-424e-86d2-0a57018335be" class="numbered-list" start="3"><li><mark class="highlight-red">核心组件</mark>：负责算盘产品基础功能组件的设计与实现，适度把控组件功能颗粒度，优化组件的使用体验与性能，算盘使用频率最高的组件榜单中常年被这些组件霸榜。其中 VSCode 组件与公式编辑器组件分别定为两种不同的场景，方便开发者能够快速地进行算盘自定义组件的开发。<ul id="85ecb5e2-2b1e-4262-95c9-b2dc0521ae17" class="bulleted-list"><li>VSCode 组件：该组件基于 Code Server 进行开发，作为算盘组件的在线开发工具（IDE），内置各种语言的 SDK 与插件，能够快速方便地开发算盘组件。该组件在算盘组件的标准开发流程中占据着重要的地位。</li></ul><ul id="75088260-1cf7-4fff-98b0-ba70774c37d1" class="bulleted-list"><li>公式编辑器组件： 相较于 VSCode 组件，公式编辑器组件采用更为精简的 Lambda 表达式来编写机理公式，机理开发人员能够非常方便将工业机理沉淀为算盘组件。</li></ul></li></ol><ol id="0cc028c7-cf61-4117-82a0-dad77492a1aa" class="numbered-list" start="4"><li><mark class="highlight-red">智能算法</mark>：负责算盘工业智能算法 Infrastructure 流程设计与实现，包含机器学习、深度学习的训练至部署的全流程、运筹学寻优算法等。基于 SDK 与核心组件构建出一套满足算法分布式以及 GPU 调度的多种场景需求的算法开发、交付的标准流程，使用算盘交付的工业智能算法均以此作为标准流程来简化算法开发与交付的复杂度。</li></ol><ol id="0aa1ea15-4e17-40b1-a6cd-638cf0f4b73a" class="numbered-list" start="5"><li><mark class="highlight-red">架构延伸</mark>：负责算盘边缘版与算盘桌面版的设计与实现<ul id="7a310b09-e035-42e6-9362-af5303bb64d1" class="bulleted-list"><li>算盘边缘版：基于 k3s 独立部署，能够完美地解决边缘场景网络孱弱，计算异构等问题，适合在边缘工控盒子中运行，目前与硬件相关的项目均采用该方案进行部署。</li></ul><ul id="c34455fa-28f8-4eed-a161-0cee76fb10a7" class="bulleted-list"><li>算盘个人版：基于 electron 进行开发，该方案利用个人电脑的计算资源运行，在校园推广的场景中非常合适，目前各合作高校均采用此版本作为教育版使用。</li></ul></li></ol><ol id="b715928b-f368-4619-8bab-66fb95e2aae8" class="numbered-list" start="6"><li><mark class="highlight-red">产品周边</mark>：参与算盘的产品设计、运营推广、培训教育等工作，目前算盘已与多所高校合作（浙江大学、华东理工、江南大学等），将算盘作为教育工具逐步推进其在工业领域落地。</li></ol><p id="f5336daf-9efc-4837-b3cb-4781fcc1ffe0" class="">
+	</p></li></ul><h2 id="8b341386-8ffa-4f68-843e-6c2dd593e5e6" class="">软件研发工程师</h2><p id="01c72586-8b64-438c-8d65-8526027f4bba" class="block-color-gray">浙江九州云信息科技<mark class="highlight-gray">有限公司</mark><mark class="highlight-gray"><em>（2016.07 - 2018.08）</em></mark></p><ul id="03224691-3d00-4453-bc2a-2c9d9526590d" class="bulleted-list"><li>Animbus<p id="b1f516a8-fbb2-472a-9b86-7d8410f2a169" class="block-color-gray">技术栈：Python、Angular、Mysql、OpenStack</p><p id="3560f2cc-81fc-476d-905d-73f11333c504" class="">Animus 是 99cloud 云平台管理系统，为企业级云计算管理平台提供了一站式的平台解决方案。<mark class="highlight-blue">本人主要负责维护该产品的持续迭代，前后端优化等工作。</mark></p><ol id="0b53752f-9618-4aa2-a02b-e8699286c065" class="numbered-list" start="1"><li>为解决 Django Template 多层级模板嵌套性能太差的问题，决定使用 AngularJS 重构前端优化体验，我负责平台逐步迁移方案，封装前端视图组件以及前后端中间件，以便团队在新的框架下能够快速开发业务。</li></ol><ol id="351ebaea-e3a2-4e21-a2d0-6b2ac5e79679" class="numbered-list" start="2"><li>负责平台 Api 性能优化，从 UI 至底层服务逐一排查问题，在尽可能不破坏原先架构的基础上寻求解决方案，确保所有 Api 都能在 1s 之内完成。</li></ol><ol id="2386873d-b2a3-473e-a363-d3bdbe5befe0" class="numbered-list" start="3"><li>参与 kolla-ansible (Ansible, Docker) 平台部署项目的开发，熟悉线上 Docker 环境调试。</li></ol><ol id="0ae6bf45-086b-4b6f-92c0-ff39fd0a00cf" class="numbered-list" start="4"><li>参与告警系统 (虚拟机业务告警、平台服务告警) 的设计与开发，负责业务告警系统的研发。</li></ol><ol id="c2f7d5e5-5212-4c93-8897-b0fd8c681f9d" class="numbered-list" start="5"><li>能够带领小团队在敏捷开发中顺利地完成每个 Scrum 的任务。</li></ol></li></ul><ul id="85da9507-ea05-408f-a7be-0aeb3404b4b9" class="bulleted-list"><li>Neutron<p id="84ab3123-b5da-431b-aae4-2f7ee16f883f" class="block-color-gray">技术栈：Python、Mysql、OpenStack</p><p id="c1295a80-6232-48cb-8618-c29614efe210" class="">Neutron 是 99cloud 云平台的网络解决方案，针对企业不同的网络环境定制满足客户需求的云平台网络方案。<mark class="highlight-blue">本人负责该产品部分功能研发与优化。</mark></p><ol id="2e281bf6-8926-40f2-8c14-a9d3788c1c2a" class="numbered-list" start="1"><li>负责开发并维护负载均衡器、端口转发等客制化功能。</li></ol><ol id="70406622-ee84-4295-a6bf-c468e1d98a80" class="numbered-list" start="2"><li>负责 Api 性能调优，部分 Api 性能提升 6x。</li></ol></li></ul><hr id="1bee84d2-01d4-4934-8fe1-c14fc2b13a2e"/><h1 id="1b352be5-e96f-4a23-b23c-eee94e73a7a3" class="">🛠  技术栈</h1><h3 id="b64a2e83-0f33-41b7-9827-b197ca273456" class="">Golang ⭐️⭐️⭐️⭐️</h3><p id="b421a383-3af2-4e60-8136-ee5ea318dfcf" class="">在工业物联网这几年，跨平台的需求异常旺盛，特别是 Win 裸跑的需求，Golang 能够很好地解决这一问题，目前是我的主力开发语言。</p><h3 id="cc68b87b-97fa-4357-a9a2-9b588ff1f626" class="">Python ⭐️⭐️⭐️⭐️</h3><p id="4cdddca1-8495-4043-9543-011fb41b21c7" class="">Python 在科学计算、数据处理等领域有着无法超越的生态优势，与我的工作密切相关，是我长期使用的第二语言。</p><h3 id="100712c8-08ef-43ba-8f31-35c05387972e" class="">Typescript ⭐️⭐️⭐️</h3><p id="640f4cdb-345f-4a7f-8077-03ce1f8c0ddb" class="">Nodejs 的 I/O 处理能力与 Typescript 的类型系统都非常好用，在业务层使用很不错。</p><hr id="6042615b-e84e-4b75-9d83-4e2f0386a75f"/><h1 id="c6f23cc5-63c9-48b6-836b-aa761328c6d1" class="">📜  开源贡献</h1><figure id="93e7d28a-05ea-4a2c-a72e-6286b7525c01" class="image"><a href="https://camo.githubusercontent.com/76d8b29ebe2ab291bb902185c68f00f4a323be850f40c9d7bdd16f55263baf3c/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d79616d616a696b26636f756e745f707269766174653d74727565"><img style="width:336px" src="https://camo.githubusercontent.com/76d8b29ebe2ab291bb902185c68f00f4a323be850f40c9d7bdd16f55263baf3c/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d79616d616a696b26636f756e745f707269766174653d74727565"/></a></figure><p id="94607749-8b82-4aa6-90e6-7a6a06725caf" class="">
+	</p></div></article></body></html>
